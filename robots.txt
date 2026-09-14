@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Preferred sitemap for Google and Bing
+Sitemap: https://hicklax13.github.io/stripe-invoice-template-freelancers/sitemap.xml
