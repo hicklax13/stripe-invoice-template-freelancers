@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Stripe invoice template for freelancers. Professional, customizable HTML invoice template with line items, tax calculations, and one-click PDF export. Built for independent contractors.">
+    <meta name="keywords" content="Stripe invoice template, freelancer invoice template, HTML invoice template, freelance invoice, Stripe billing invoice, contractor invoice, one-page invoice template">
+    <meta name="author" content="hicklax13">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hicklax13.github.io/stripe-invoice-template-freelancers/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Stripe Invoice Template for Freelancers — Free HTML Template with PDF Export">
+    <meta property="og:description" content="Professional, customizable Stripe invoice template built for freelancers. Includes line items, tax, discounts, and one-click PDF. Copy, edit, send.">
+    <meta property="og:url" content="https://hicklax13.github.io/stripe-invoice-template-freelancers/">
+    <meta property="og:image" content="https://hicklax13.github.io/stripe-invoice-template-freelancers/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stripe Invoice Template for Freelancers">
+    <meta name="twitter:description" content="Free, customizable HTML invoice template with Stripe billing integrations. Built for independent contractors.">
+    <meta name="twitter:image" content="https://hicklax13.github.io/stripe-invoice-template-freelancers/og-image.png">
+
+    <title>Stripe Invoice Template for Freelancers — Free HTML Invoice Template</title>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Stripe Invoice Template for Freelancers — Free HTML Invoice Template",
+        "description": "Professional, customizable Stripe invoice template built for freelancers. Includes line items, tax calculations, discounts, and one-click PDF export.",
+        "author": {
+            "@type": "Person",
+            "name": "hicklax13"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "hicklax13"
+        },
+        "datePublished": "2026-09-14",
+        "dateModified": "2026-09-14",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://hicklax13.github.io/stripe-invoice-template-freelancers/"
+        },
+        "image": "https://hicklax13.github.io/stripe-invoice-template-freelancers/og-image.png"
+    }
+    </script>
+
+    <!-- BreadcrumbList schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://hicklax13.github.io/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Stripe Invoice Template for Freelancers"
+            }
+        ]
+    }
+    </script>
+
+    <!-- SoftwareApplication schema for the template -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Stripe Invoice Template for Freelancers",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "description": "Free, customizable HTML invoice template for freelancers using Stripe billing. Includes line items, tax, discounts, and PDF export.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "softwareRequirements": "HTML5 browser, Stripe account (optional)"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg: #0f1014;
+            --surface: #1a1b22;
+            --border: #2a2b35;
+            --text: #e4e4e7;
+            --muted: #8a8d96;
+            --accent: #67e8f9;
+            --accent-2: #a78bfa;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 820px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+        h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 0.5rem; background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .subtitle { color: var(--muted); font-size: 1.1rem; }
+        .meta { display: flex; gap: 1.5rem; justify-content: center; margin-top: 1rem; color: var(--muted); font-size: 0.9rem; }
+        .meta span { display: flex; align-items: center; gap: 0.3rem; }
+        section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent); }
+        p { margin-bottom: 1rem; color: #c4c4c9; }
+        ul { margin-bottom: 1rem; padding-left: 1.5rem; color: #c4c4c9; }
+        li { margin-bottom: 0.4rem; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; }
+        .feature-card h3 { color: var(--accent-2); margin-bottom: 0.5rem; font-size: 1rem; }
+        .demo-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        pre { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.6; color: #c4c4c9; }
+        code { font-family: 'Fira Code', Consolas, monospace; color: var(--accent); }
+        footer { text-align: center; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stripe Invoice Template for Freelancers</h1>
+            <p class="subtitle">A free, customizable HTML invoice template built for independent contractors using Stripe billing.</p>
+            <div class="meta">
+                <span>📅 September 14, 2026</span>
+                <span>🏷️ Invoice Templates, Freelance, Stripe</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Why use a Stripe invoice template?</h2>
+            <p>Freelancers don't need expensive invoicing software to get paid on time. A clean, professional invoice template — one you control — sends a better client experience and reduces back-and-forth. This free HTML invoice template is built specifically for freelancers who bill through Stripe: it includes line items, tax calculations, discount fields, accepted payment methods, and a one-click PDF export.</p>
+            <p>Whether you're a designer, developer, writer, consultant, or any independent contractor, this template adapts to your workflow without requiring a subscription.</p>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Line Items</h3>
+                    <p>Unlimited item rows with quantity, unit price, and line total. Edit inline or duplicate rows.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tax & Discounts</h3>
+                    <p>Apply percentage or flat tax rates and discounts per line item or on the invoice total.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>PDF Export</h3>
+                    <p>One-click "Download as PDF" from any modern browser. Invoice renders cleanly on 8.5×11 paper.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Stripe-Ready</h3>
+                    <p>Includes a payment link field. Drop in your Stripe payment link or invoice ID so clients know how to pay.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Customizable</h3>
+                    <p>Edit your logo, colors, footer text, payment terms, and company info directly in the HTML.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>No Sign-Up</h3>
+                    <p>Just download the HTML file, open it in a browser, and edit. No account, no database, no monthly fee.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>How to use the template</h2>
+            <ul>
+                <li>Download the HTML file and open it in Chrome, Edge, Firefox, or Safari.</li>
+                <li>Fill in your company name, address, email, and Stripe payment link in the header section.</li>
+                <li>Add the client's name, address, and invoice details.</li>
+                <li>Enter line items: description, quantity, rate, and any per-line tax or discount.</li>
+                <li>Set the invoice number, issue date, and due date.</li>
+                <li>Click "Download as PDF" to export, or copy the HTML to reuse for future invoices.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quick preview</h2>
+            <div class="demo-box">
+                <p><strong>Demo:</strong> A sample invoice showing a freelancer billing a client for a website project — itemized hours, tax, and a Stripe payment link for one-click settlement.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Best practices for freelancer invoicing</h2>
+            <ul>
+                <li>Number every invoice sequentially and keep a running log (Invoice #001, #002, ...).</li>
+                <li>Include payment terms upfront (e.g. "Net 15", "Due on receipt") to set expectations.</li>
+                <li>Break work into clear line items so clients understand what they're paying for.</li>
+                <li>State accepted payment methods and include a Stripe payment link when possible — it reduces friction.</li>
+                <li>Send invoices promptly and follow up politely on overdue invoices.</li>
+                <li>Keep a PDF copy of every sent invoice for your records and taxes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Frequently asked questions</h2>
+            <p><strong>Is this template really free?</strong> Yes — the HTML file is free to download, edit, and reuse for as many invoices as you need. No sign-up required.</p>
+            <p><strong>Do I need a Stripe account?</strong> No. The template works without Stripe. If you use Stripe, you can add your payment link or invoice ID so clients can pay with one click.</p>
+            <p><strong>Can I customize the colors and logo?</strong> Absolutely. Edit the header colors, swap in your logo image, and change the footer text directly in the HTML file. Everything is plain, editable markup.</p>
+            <p><strong>How do I send the invoice?</strong> Download as PDF and attach it to an email, or share the PDF link. The template is designed to look clean both on screen and when printed.</p>
+        </section>
+
+        <footer>
+            <p>Stripe Invoice Template for Freelancers — free, open HTML template. Built for independent contractors.</p>
+        </footer>
+    </div>
+</body>
+</html>
