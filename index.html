@@ -60,6 +60,7 @@
   li { margin-bottom: 0.5rem; }
   .article-image { text-align: center; margin: 2rem 0; }
   .article-image img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+ .article-image figcaption { color: #64748b; font-size: 0.85rem; margin-top: 0.5rem; }
   .article-image.hero { margin-top: -1rem; margin-bottom: 2rem; }
   hr { border: none; border-top: 1px solid #e2e8f0; margin: 3rem 0; }
   .cta-box { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin: 2rem 0; }
@@ -143,6 +144,7 @@ Stripe's built-in invoicing lets you create and send invoices directly from the 
 </ul>
 <strong>Screenshot description — Stripe Dashboard Invoice Creation:</strong>
 <blockquote>The Stripe Dashboard opens to the "Invoices" section. A clean sidebar lists invoice status columns: Draft, Sent, Paid, Overdue. The main panel shows a "Create invoice" button. A modal pops up with fields for Customer (searchable dropdown), Line items (description, quantity, unit amount, tax), Invoice settings (due date, currency, collection method). A prominent "Send invoice" button appears at the bottom. The hosted invoice preview shows a mobile-responsive page with the Stripe logo, client name, line-item table, and a large "Pay now" button supporting Apple Pay and Google Pay.</blockquote>
+<figure class="article-image"><img src="images/screenshot-client-dropdown.png" alt="Illustrative invoice client selection screen" loading="lazy"><figcaption>Illustrative client-selection view for a Stripe-connected invoice workflow.</figcaption></figure>
 <h3>Path 2: Third-Party Invoice Automation Wrappers (No Code, Low Setup)</h3>
 <p>
 This is where the category has exploded in 2025–2026. Tools like <strong>Stripdo</strong>, <strong>IndieOps</strong>, <strong>InvoiceCave</strong>, <strong>Invoke</strong>, and <strong>Hello Invoice</strong> connect to your Stripe account via OAuth, then take over the invoice generation, emailing, and reminder workflow. They sit on top of Stripe — they don't replace it — so your payments still flow through your own Stripe account. 
@@ -170,6 +172,7 @@ This is where the category has exploded in 2025–2026. Tools like <strong>Strip
 <strong>What makes this tier worth it:</strong> You stop thinking about invoicing entirely. The tool fires off the invoice the moment Stripe confirms payment (or when you trigger it), tracks delivery status, sends reminders on schedule, and hands you a clean export at tax time. For a freelancer billing $2,000–$20,000/month, the time savings alone — often 5+ hours/month — dwarfs the subscription cost.
 <strong>Screenshot description — Third-Party Invoice Dashboard (e.g., InvoiceCave or IndieOps):</strong>
 <blockquote>A modern SaaS dashboard with a left sidebar: Invoices, Clients, Recurring, Expenses, Settings. The main panel shows an invoice table with columns: Invoice #, Client, Amount, Status (Paid/Sent/Overdue), Date, Actions. A top stat bar shows "This month: $8,400 billed | 6 invoices sent | 2 overdue." A prominent "+ New Invoice" button sits in the top-right. Clicking it opens a slide-over panel: Client dropdown (searchable), Line items with add/remove, Tax rate selector, Due date picker, Stripe payment link toggle, "Send" button. Below the table, a "Recovered revenue" card shows amounts recovered through automated reminders.</blockquote>
+<figure class="article-image"><img src="images/screenshot-line-items.png" alt="Illustrative invoice line items editor" loading="lazy"><figcaption>Illustrative line-item editor showing quantities, rates, and totals before sending.</figcaption></figure>
 <h3>Path 3: API-First Automation for Developers (Code or MCP)</h3>
 <p>
 If you're a developer, you can go deeper. Stripe's Invoicing API lets you create, send, and manage invoices programmatically: 
@@ -205,6 +208,7 @@ A new wave of tools (InvoiceCave, Workify) is shipping <strong>MCP servers</stro
 </p>
 <strong>Screenshot description — CLI/MCP Invoice Creation:</strong>
 <blockquote>A terminal window showing a Claude Code session. The developer types: "Create an invoice for Sarah Chen at sarah@acmecorp.com for $1,200 — logo design, 3 concepts, due Net 15." The MCP tool calls fire automatically. The terminal shows tool use: <code>invoicecave_tools.create_customer(...)</code>, <code>invoicecave_tools.create_invoice(...)</code>. A confirmation appears: "Invoice #INV-0042 created. Stripe payment link: https://buy.stripe.com/abc123. Email sent to sarah@acmecorp.com." A follow-up command: "Show me all unpaid invoices" returns a formatted table.</blockquote>
+<figure class="article-image"><img src="images/screenshot-payment-link.png" alt="Illustrative Stripe payment link preview" loading="lazy"><figcaption>Illustrative payment-link preview; verify pricing, fees, and supported payment methods in Stripe before launch.</figcaption></figure>
 <hr>
 <h2>Feature Comparison: Free vs. Pro Stripe Invoice Generators</h2>
 <p>
@@ -232,6 +236,7 @@ The "free vs. pro" question is real, but the answer isn't "free is fine" or "pro
 <tr><td><strong>Per-invoice fee</strong></td><td>0.4% (capped at $2) when paid via Stripe</td><td>Usually none (platform fees only)</td><td>Usually none (platform subscription)</td></tr>
 <tr><td><strong>Best for</strong></td><td>Testing, low volume, API experiments</td><td>Freelancers sending <10 invoices/month who want PDF + payment link</td><td>Freelancers billing $2k+/month who want zero-touch invoicing</td></tr>
 </tbody></table>
+<figure class="article-image"><img src="images/comparison-graphic.png" alt="Comparison graphic for Stripe invoice workflows" loading="lazy"><figcaption>At-a-glance comparison of manual, native Stripe, and automated invoice workflows.</figcaption></figure>
 <h3>When Free Is Enough</h3>
 <p>
 Free tiers — whether Stripe's native invoicing or a third-party free plan like InvoiceCave's or InvogenPRO's — work well when: 
@@ -400,6 +405,7 @@ Here's what the setup and first invoice look like in practice. This walkthrough 
 <h3>Step 4: Watch It Run on Autopilot</h3>
 <strong>Screenshot description — Invoice Dashboard After First Invoice:</strong>
 <blockquote>The main dashboard now shows: Invoice #INV-0001 | Acme Corp | $1,200.00 | Paid (green badge) | Sep 14, 2026 | "View" and "Download PDF" actions. A status summary bar: "Sent: 1 | Paid: 1 | Overdue: 0 | This month: $1,200 billed." A subtle tooltip on the "Paid" badge: "Paid via Stripe — Sep 14, 2026, 2:34 PM." A "Create recurring invoice" button appears if you want to turn this into a monthly retainer.</blockquote>
+<figure class="article-image"><img src="images/screenshot-reminders.png" alt="Illustrative invoice reminder dashboard" loading="lazy"><figcaption>Illustrative reminder dashboard showing payment status and overdue follow-up controls.</figcaption></figure>
 <strong>The automation kicks in:</strong> If you've enabled reminders, the tool will send the pre-due and overdue follow-up emails automatically. If you've set up a recurring schedule, the next invoice will generate and send on the configured date without any action from you.
 <hr>
 <h2>FAQ: Stripe Invoice Generators for Freelancers</h2>
